@@ -50,19 +50,19 @@
     grid-template-columns: repeat(3, 1fr);
   }
 
-  .box {
+  /* .box {
     width: 8rem;
     height: 8rem;
-  }
+  } */
 
   .icon {
     font-size: 2.6rem;
   }
 
-  .color-name,
+  /* .color-name,
   .symbol-and {
     font-size: 1.7rem;
-  }
+  } */
 }
 
 /* -------------------------
@@ -78,8 +78,8 @@
   }
 
   .box {
-    width: 7.2rem;
-    height: 7.2rem;
+    width: 8rem;
+    height: 8rem;
   }
 
   .icon {
@@ -127,10 +127,10 @@
     padding-bottom: 0.6rem;
   }
 
-  .box {
+  /* .box {
     width: 6.4rem;
     height: 6.4rem;
-  }
+  } */
 
   .icon {
     font-size: 2rem;
@@ -190,20 +190,20 @@
    Tiny phones: <= 380px
    ------------------------- */
 @media (max-width: 380px) {
-  .box {
+  /* .box {
     width: 5.6rem;
     height: 5.6rem;
-  }
+  } */
 
   .icon {
     font-size: 1.8rem;
   }
 
-  .color-name,
+  /* .color-name,
   .symbol-and {
     font-size: 1.2rem;
     padding: 1.6rem 0;
-  }
+  } */
 
   .pagination-item,
   .arrow {
