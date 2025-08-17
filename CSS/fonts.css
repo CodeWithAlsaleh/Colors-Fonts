@@ -1,0 +1,181 @@
+.font-box {
+  background-color: #fff;
+  padding: 3.2rem;
+  padding-bottom: 2.4rem;
+  border-radius: 11px;
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+  transition: transform 0.4s;
+}
+
+.font-box:hover {
+  transform: translateY(-5%);
+}
+
+.fonts {
+  display: flex;
+  gap: 12rem;
+}
+
+.font-name,
+.font-type {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #111;
+  text-transform: uppercase;
+}
+
+.font-sentence-container {
+  margin-top: 3.2rem;
+  text-align: center;
+}
+
+.font-sentence {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #327563;
+}
+
+.font-link {
+  font-size: 2rem;
+  font-weight: 500;
+  color: #111;
+  text-decoration: none;
+
+  display: flex;
+  gap: 1rem;
+  width: fit-content;
+  margin: 0 auto;
+  margin-top: 3.2rem;
+}
+
+/* -------------------------
+   Breakpoint: <= 1200px
+   ------------------------- */
+@media (max-width: 1200px) {
+  .grid-3-cl {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .font-box {
+    padding: 2.6rem;
+  }
+
+  .fonts {
+    gap: 1.6rem;
+  }
+
+  .font-name,
+  .font-type {
+    font-size: 1.7rem;
+  }
+
+  .font-sentence {
+    font-size: 1.5rem;
+  }
+
+  .font-link {
+    font-size: 1.8rem;
+  }
+}
+
+/* -------------------------
+   Breakpoint: <= 900px (tablet)
+   ------------------------- */
+@media (max-width: 900px) {
+  .grid-3-cl {
+    grid-template-columns: 1fr;
+  }
+
+  .font-box {
+    padding: 2rem;
+    padding-bottom: 1.6rem;
+  }
+
+  .fonts {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .font-name,
+  .font-type {
+    font-size: 1.6rem;
+    letter-spacing: 0.02em;
+  }
+
+  .font-sentence {
+    font-size: 1.45rem;
+    margin-top: 1.6rem;
+    text-align: center;
+    font-weight: 600;
+  }
+
+  .font-link {
+    font-size: 1.6rem;
+    margin-top: 2rem;
+  }
+
+  .font-box {
+    box-shadow: 0 1.6rem 3.2rem rgba(0, 0, 0, 0.06);
+  }
+}
+
+/* -------------------------
+   Breakpoint: <= 540px (mobile)
+   ------------------------- */
+@media (max-width: 540px) {
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .font-box {
+    padding: 1.2rem;
+    padding-bottom: 1rem;
+    border-radius: 10px;
+  }
+
+  .fonts {
+    gap: 0.6rem;
+    align-items: flex-start;
+  }
+
+  .font-name,
+  .font-type {
+    font-size: 1.4rem;
+    font-weight: 700;
+  }
+
+  .font-sentence {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-top: 1.2rem;
+  }
+
+  .font-link {
+    font-size: 1.4rem;
+    margin-top: 1.4rem;
+  }
+}
+
+/* -------------------------
+   Tiny phones: <= 380px
+   ------------------------- */
+@media (max-width: 380px) {
+  .font-name,
+  .font-type {
+    font-size: 1.25rem;
+  }
+
+  .font-sentence {
+    font-size: 1.1rem;
+  }
+
+  .font-link {
+    font-size: 1.2rem;
+  }
+
+  .font-box {
+    padding: 0.9rem;
+  }
+}

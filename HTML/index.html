@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- LINK ICONS -->
+    <script
+      defer
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      defer
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <!-- LINK FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- LINK CSS -->
+    <link rel="stylesheet" href="../CSS/general.css" />
+    <link rel="stylesheet" href="../CSS/colors.css" />
+
+    <!-- LINK JS -->
+    <script defer src="../JS/colors.js" type="module"></script>
+
+    <title>Colors & Contrast Ratio</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navbar general-flex">
+        <ion-icon class="color-icon" name="color-filter-outline"></ion-icon>
+
+        <ul class="navbar-list ul-list general-flex horizontal-gap-md">
+          <li>
+            <a class="navbar-item" href="index.html">Colors</a>
+          </li>
+
+          <li>
+            <a class="navbar-item" href="fonts.html">Fonts</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div id="colors-container" class="container grid-4-cl grid-gap-md"></div>
+
+      <div class="pagination container">
+        <ul class="pagination-list ul-list general-flex horizontal-gap-sm">
+          <li class="arrow-list-item center-ele">
+            <ion-icon
+              class="arrow arrow-left"
+              name="chevron-back-outline"
+            ></ion-icon>
+          </li>
+
+          <li
+            id="list-index-0"
+            data-index="0"
+            class="pagination-list-item active-list"
+          >
+            <button href="#" class="pagination-item pagination-item-active">
+              1
+            </button>
+          </li>
+
+          <li id="list-index-1" data-index="1" class="pagination-list-item">
+            <button href="#" class="pagination-item">2</button>
+          </li>
+
+          <li id="list-index-2" data-index="2" class="pagination-list-item">
+            <button href="#" class="pagination-item">3</button>
+          </li>
+
+          <li class="arrow-list-item center-ele">
+            <ion-icon
+              class="arrow arrow-right"
+              name="chevron-forward-outline"
+            ></ion-icon>
+          </li>
+        </ul>
+      </div>
+    </main>
+  </body>
+</html>
